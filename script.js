@@ -1,8 +1,8 @@
 // 1a
-const mcuShows = ["Loki", "Moon"];
+const mcuShows = [`Loki", "Moon Knight`];
 
 //1b
-const starWarsShows = ["The Mandalorian", "The Book of Boba Fett"];
+const starWarsShows = [`The Mandalorian`, `The Book of Boba Fett`];
 
 //1c
 const disneyPlusShows = [...mcuShows, ...starWarsShows, `The Beatles: Get Back`];
@@ -39,7 +39,7 @@ const disneyJunior = [`Mickey Mouse Clubhouse`, `Spidey and His Amazing Friends`
 const [Mickey, Spidey] = disneyJunior;
 
 //3c
-console.log(disneyJunior);
+console.log(Mickey, Spidey);
 
 //4a
 const avengers = {
@@ -61,7 +61,7 @@ const moreAvengers = {
 };
 
 //4e
-const {nat,...others} = moreAvengers;
+const {blackWidow: nat,...others} = moreAvengers;
 
 //4f
 console.log(nat, others);
@@ -74,6 +74,15 @@ const bonus = {
   };
 
 //5a
+const all = [
+    ...bonus.first,
+    ...bonus.second, 
+    ...bonus.third
+];
 
+console.log(all);
 
 //5b
+const [one, two, three, four, five, six, seven, eight, nine] = all
+
+console.log(one, two, three, four, five, six, seven, eight, nine);
